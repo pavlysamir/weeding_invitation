@@ -7,7 +7,7 @@ class WeddingData {
   static WeddingInfo get info => WeddingInfo(
     brideName: 'Elaria',
     groomName: 'Anton',
-    weddingDate: DateTime(2026, 8, 6, 19, 30),
+    weddingDate: DateTime(2026, 8, 6, 19, 00),
     venueName: 'Dar Sanabel Events\nLayali Hall',
     venueAddress: 'Sanabel Events House,\nZakat Foundation Street',
     googleMapsUrl: 'https://maps.app.goo.gl/yGpgh2WBFKHCTySN7',
@@ -35,7 +35,7 @@ class WeddingData {
 
   static List<ScheduleItem> get _schedule => [
     const ScheduleItem(
-      time: '7:30 PM',
+      time: '7:00 PM',
       title: 'Guest Arrival',
       description: 'Welcome drinks & reception',
       icon: '🌸',

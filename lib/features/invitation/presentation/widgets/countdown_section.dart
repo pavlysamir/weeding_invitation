@@ -87,7 +87,7 @@ class _CountdownSectionState extends State<CountdownSection> {
           AnimatedFadeIn(
             delay: const Duration(milliseconds: 400),
             child: Text(
-              'August 6, 2026 · 7:30 PM',
+              'August 6, 2026 · 7:00 PM',
               style: GoogleFonts.cormorantGaramond(
                 fontSize: 16,
                 color: AppColors.gold,
