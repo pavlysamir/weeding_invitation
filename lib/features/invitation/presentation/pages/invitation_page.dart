@@ -4,9 +4,7 @@ import 'package:invitation_party/features/invitation/presentation/cubit/invitati
 import 'package:invitation_party/features/invitation/presentation/cubit/invitation_state.dart';
 import 'package:invitation_party/features/invitation/presentation/widgets/boarding_pass_section.dart';
 import 'package:invitation_party/features/invitation/presentation/widgets/countdown_section.dart';
-import 'package:invitation_party/features/invitation/presentation/widgets/dress_code_section.dart';
 import 'package:invitation_party/features/invitation/presentation/widgets/envelope_cover.dart';
-import 'package:invitation_party/features/invitation/presentation/widgets/faq_section.dart';
 import 'package:invitation_party/features/invitation/presentation/widgets/floating_music_player.dart';
 import 'package:invitation_party/features/invitation/presentation/widgets/footer_section.dart';
 import 'package:invitation_party/features/invitation/presentation/widgets/gallery_section.dart';
@@ -56,8 +54,8 @@ class InvitationPage extends StatelessWidget {
                         items: state.weddingInfo.galleryItems,
                         currentIndex: state.currentGalleryIndex,
                       ),
-                      DressCodeSection(info: state.weddingInfo),
-                      FaqSection(items: state.weddingInfo.faqItems),
+                     // DressCodeSection(info: state.weddingInfo),
+                     // FaqSection(items: state.weddingInfo.faqItems),
                       BoardingPassSection(info: state.weddingInfo),
                       FooterSection(
                         brideName: state.weddingInfo.brideName,

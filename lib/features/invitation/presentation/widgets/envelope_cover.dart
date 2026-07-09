@@ -275,8 +275,34 @@ class _EnvelopeCard extends StatelessWidget {
 
               const SizedBox(height: 28),
 
-              // Wax seal
-              _WaxSeal()
+              // Wax seal / Boarding image
+              Container(
+                width: 130,
+                height: 130,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  border: Border.all(
+                    color: const Color(0xFFC9A96E),
+                    width: 3,
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.15),
+                      blurRadius: 16,
+                      spreadRadius: 2,
+                      offset: const Offset(0, 4),
+                    ),
+                  ],
+                ),
+                child: ClipOval(
+                  child: Image.asset(
+                    'assets/images/boarding_img.jpeg',
+                    width: 130,
+                    height: 130,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              )
                   .animate()
                   .scale(
                     delay: 200.ms,
